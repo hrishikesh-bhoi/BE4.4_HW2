@@ -8,7 +8,7 @@ const Hotel = require("./models/hotel.models");
 const corsOptions = {
   origin: [
     "http://localhost:5173",
-   "https://bi-1-1-hw-1-nu.vercel.app"
+   "https://bi-1-1-hw-2-three.vercel.app"
 ],
   credentials: true,
   optionsSuccessStatus: 200,
