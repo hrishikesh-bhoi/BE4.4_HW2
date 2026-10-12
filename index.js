@@ -1,12 +1,23 @@
 const express = require("express");
 const app = express();
+const cors = require("cors");
 
 const { initializeDatabase } = require("./db/db.connect");
 const Hotel = require("./models/hotel.models");
 
-initializeDatabase();
+const corsOptions = {
+  origin: [
+    "http://localhost:5173",
+   "https://bi-1-1-hw-1-nu.vercel.app"
+],
+  credentials: true,
+  optionsSuccessStatus: 200,
+};
 
+app.use(cors(corsOptions));
 app.use(express.json());
+
+initializeDatabase();
 
 //1. Create an API with route "/hotels" to create a new hotel data in the Database. Test your API with Postman.
 async function createHotel(newHotel) {
