@@ -9,7 +9,8 @@ const corsOptions = {
   origin: [
     "http://localhost:5173",
    "https://bi-1-1-hw-2-three.vercel.app",
-   "https://bi-1-2-hw-2-xi.vercel.app"
+   "https://bi-1-2-hw-2-xi.vercel.app",
+   "https://bi-1-3-hw-2-gray.vercel.app"
 ],
   credentials: true,
   optionsSuccessStatus: 200,
